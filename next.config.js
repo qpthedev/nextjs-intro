@@ -21,6 +21,10 @@ module.exports = {
         source: "/api/movies",
         destination: `${BASE_URL}/movie/popular?api_key=${API_KEY}`,
       },
+      {
+        source: "/api/movies/:id",
+        destination: `${BASE_URL}/movie/:id?api_key=${API_KEY}`,
+      },
     ];
   },
 };
